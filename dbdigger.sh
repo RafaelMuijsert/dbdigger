@@ -2,6 +2,8 @@
 
 while read line
 do 
+    # Log
+    echo "Trying: $line"
     # Create a temporary directory
     temp="$(mktemp -d)"
     # Recursively download Git directory to /tmp/
