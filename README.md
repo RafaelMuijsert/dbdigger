@@ -16,5 +16,5 @@ to obtain credentials to STDIN.
 Example usage:
 
 ```bash
-$ echo 'https://ki23.webtech-uva.nl' | ./dbdigger.sh 
+$ echo 'https://group.project.com' | ./dbdigger.sh 
 ```
