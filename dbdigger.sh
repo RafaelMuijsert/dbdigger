@@ -7,7 +7,7 @@ do
     # Create a temporary directory
     temp="$(mktemp -d)"
     # Recursively download Git directory to /tmp/
-    status="$(wget --cut-dirs=1 -q -nc -np -nH -r -e robots=off -R 'index.html?*' -P $temp/ $line/.git/)"
+    status="$(wget --cut-dirs=1 -q -nc -np -nH -r -e robots=off -R 'index.html?*' -P $temp/.git $line/.git/)"
     if [ $? != 0 ]
     then
         echo "An error occurred while downloading $line. Continuing..."
